@@ -1,5 +1,5 @@
 name: second deployment
-on: issues
+on: [issues, issue_comment]
 jobs:
   output-info:
     runs-on: ubuntu-latest
