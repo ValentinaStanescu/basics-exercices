@@ -1,0 +1,8 @@
+name: second deployment
+on: issues
+jobs:
+  output-info:
+    runs-ok: ubuntu-latest
+    steps:
+      - name: output event detalies
+        run: echo ${{toJson(github.event)}}
